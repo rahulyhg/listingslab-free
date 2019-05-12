@@ -15,31 +15,7 @@
   https://wordpress.com/theme/business
 */
 
-/*$x-color-shade-black:   #1d1d21;
-$x-color-shade-gray-10: #2e2e31;*/
-/*
-$x-color-shade-gray-3:  #a8b1b8;
-*/
-/*$x-color-shade-gray-1:  #e8ecf1;*/
-/*$x-color-words-primary:    $x-color-primary-base;
-$x-color-words-secondary:  $x-color-secondary-base;
-$x-color-words-background: $x-color-shade-white;
-$x-color-words-link:       $x-color-primary-base;
-$x-color-words-hover:      $x-color-primary-dark;*/
-/*$x-color-border-primary:          $x-color-primary-base;
-$x-color-border-form:             $x-color-border-base;*/
-/*$x-color-border-form-error:       $x-color-feedback-error;
-$x-color-border-form-bg:          $x-color-shade-white;
-$x-color-border-form-placeholder: $x-color-shade-gray-4;*/
-/*$x-color-background-transparent: transparent;*/
-/*$x-color-button-primary-bg:       $x-color-primary-bg;
-$x-color-button-primary-hover:    $x-color-primary-light;
-$x-color-button-primary-active:   $x-color-primary-dark;
-$x-color-button-primary-label:    $x-color-shade-white;
-$x-color-button-secondary-bg:     $x-color-secondary-bg;
-$x-color-button-secondary-hover:  $x-color-secondary-light;
-$x-color-button-secondary-active: $x-color-secondary-dark;
-$x-color-button-secondary-label:  $x-color-shade-white;*/
+
 :root {
   --grid-column: 80px;
   --grid-gutter: 25px;
@@ -81,7 +57,7 @@ $x-color-button-secondary-label:  $x-color-shade-white;*/
   --space-column-11: calc( 11 * ( var(--grid-column) + var(--grid-gutter) ) - var(--grid-gutter));
   --space-column-12: calc( 12 * ( var(--grid-column) + var(--grid-gutter) ) - var(--grid-gutter));
   --font-size-base: 1em;
-  --font-size-ratio: 1.2;
+  --font-size-ratio: 1.1;
   --font-size-responsive-ratio: 1.167;
   --font-size-xxs: calc( 1em / ( var(--font-size-ratio) * var(--font-size-ratio) * var(--font-size-ratio) ) );
   --font-size-xs: calc( 1em / ( var(--font-size-ratio) * var(--font-size-ratio) ) );
@@ -91,60 +67,14 @@ $x-color-button-secondary-label:  $x-color-shade-white;*/
   --font-size-xl: calc( 1em * ( var(--font-size-ratio) * var(--font-size-ratio) * var(--font-size-ratio) ) );
   --font-size-xxl: calc( 1em * ( var(--font-size-ratio) * var(--font-size-ratio) * var(--font-size-ratio) * var(--font-size-ratio) ) );
   --font-size-xxxl: calc( 1em * ( var(--font-size-ratio) * var(--font-size-ratio) * var(--font-size-ratio) * var(--font-size-ratio) * var(--font-size-ratio) ) );
-  --font-family-body: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  --font-family-heading: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  --font-family-code: Menlo, monaco, Consolas, Lucida Console, monospace;
+  --font-family-body: "Helvetica Neue", sans-serif;
+  --font-family-heading: "Helvetica Neue", sans-serif;
+  --font-family-code: monaco, monospace;
   --font-leading-body: 1.6;
-  --font-leading-heading: 1.2;
+  --font-leading-heading: 1.15;
   --font-leading-double: calc( var(--font-leading-heading) * 2);
   --font-leading-md: 1.4;
   --font-letter-spacing: .125em;
-  --color-primary-base: #6e7381;
-  --color-primary-dark: #585c67;
-  --color-primary-light: #8b8f9a;
-  --color-primary-bg: #e2e3e6;
-  --color-secondary-base: #121733;
-  --color-secondary-bg: #d0d1d6;
-  --color-secondary-light: #41455c;
-  --color-secondary-dark: #0e1229;
-  --color-accent-base: #5f4bb6;
-  --color-accent-light: #7f6fc5;
-  --color-shade-black: #1d1d21;
-  --color-shade-gray-10: #2e2e31;
-  --color-shade-gray-6: #91a3b0;
-  --color-shade-gray-4: #8b949d;
-  --color-shade-gray-3: #a8b1b8;
-  --color-shade-gray-2: #e8ecf1;
-  --color-shade-gray-1: #e8ecf1;
-  --color-shade-white: #ffffff;
-  --color-feedback-success: #88c459;
-  --color-feedback-error: #f5414f;
-  --color-feedback-warning: #ffd137;
-  --color-words-base: #6e7381;
-  --color-words-subtle: #91a3b0;
-  --color-words-heading: #121733;
-  --color-words-primary: #6e7381;
-  --color-words-secondary: #121733;
-  --color-words-background: #ffffff;
-  --color-words-link: #6e7381;
-  --color-words-hover: #585c67;
-  --color-border-base: #e8ecf1;
-  --color-border-primary: #6e7381;
-  --color-border-form: #e8ecf1;
-  --color-border-form-focus: #6e7381;
-  --color-border-form-error: #f5414f;
-  --color-border-form-bg: #ffffff;
-  --color-border-form-placeholder: #8b949d;
-  --color-background-body: #ffffff;
-  --color-background-transparent: transparent;
-  --color-button-primary-bg: #e2e3e6;
-  --color-button-primary-hover: #8b8f9a;
-  --color-button-primary-active: #585c67;
-  --color-button-primary-label: #ffffff;
-  --color-button-secondary-bg: #d0d1d6;
-  --color-button-secondary-hover: #41455c;
-  --color-button-secondary-active: #0e1229;
-  --color-button-secondary-label: #ffffff;
 }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -275,10 +205,6 @@ template {
 }
 
 /** === Typography === */
-body:not(.gutenberg-editor-page) {
-  font-size: 1em;
-  font-size: var(--font-size-base);
-}
 
 @media only screen and (min-width: 815px) {
   body:not(.gutenberg-editor-page) {
@@ -293,53 +219,17 @@ input,
 select,
 optgroup,
 textarea {
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-family: var(--font-family-body);
   line-height: 1.6;
   line-height: var(--font-leading-body);
   color: #6e7381;
   color: var(--color-words-base);
-  font-weight: 400;
+  
 }
 
 .site-title,
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  color: #121733;
-  color: var(--color-words-heading);
-  font-weight: 800;
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-family: var(--font-family-heading);
-  line-height: 1.2;
-  line-height: var(--font-leading-heading);
-}
-
-h2 {
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-family: var(--font-family-heading);
-}
-
-h5 {
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-family: var(--font-family-heading);
-  letter-spacing: 0.125em;
-  letter-spacing: var(--font-letter-spacing);
-  text-transform: uppercase;
-}
-
-h6 {
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-family: var(--font-family-heading);
-  letter-spacing: 0.125em;
-  letter-spacing: var(--font-letter-spacing);
-  text-transform: uppercase;
-}
-
-/* text size */
-.text--xxxl,
-p.has-drop-cap:not(:focus):first-letter {
-  font-size: calc( 1em * ( 1.2 * 1.2 * 1.2 * 1.2 * 1.2 ) );
-  font-size: var(--font-size-xxxl);
+  font-weight: normal;
 }
 
 p.has-drop-cap:not(:focus):first-letter {
@@ -407,12 +297,10 @@ blockquote.is-large p {
 
 blockquote cite,
 blockquote.is-large cite {
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-family: var(--font-family-heading);
   font-size: calc( 1em / ( 1.2 * 1.2 ) );
   font-size: var(--font-size-xs);
   font-style: normal;
-  font-weight: 500;
+  
 }
 
 blockquote.is-large p {
@@ -459,7 +347,7 @@ abbr[title] {
 
 b,
 strong {
-  font-weight: bolder;
+  
 }
 
 sub,
@@ -531,7 +419,7 @@ pre {
 }
 
 dt {
-  font-weight: bold;
+  
 }
 
 dd {
@@ -641,8 +529,6 @@ ol > li:before {
   top: var(--space-xxs);
   color: #6e7381;
   color: var(--color-primary-base);
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-family: var(--font-family-heading);
   font-size: calc( 1em / ( 1.2 * 1.2 ) );
   font-size: var(--font-size-xs);
   line-height: 1.4;
@@ -698,7 +584,7 @@ input[type="submit"] {
   border: 0;
   cursor: pointer;
   display: inline-block;
-  font-weight: 600;
+  
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -806,7 +692,7 @@ textarea {
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  font-weight: 200;
+  
   padding: 0;
   position: absolute !important;
   width: 1px;
@@ -814,8 +700,6 @@ textarea {
 }
 
 .screen-reader-text:focus {
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-family: var(--font-family-heading);
   background-color: #f1f1f1;
   border-radius: 3px;
   box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25);
@@ -825,7 +709,7 @@ textarea {
   display: block;
   font-size: 14px;
   font-size: 0.875rem;
-  font-weight: 600;
+  
   outline: none;
   height: auto;
   line-height: 1.2;
@@ -847,7 +731,9 @@ textarea {
   border-bottom: 1px solid gray;
   border-bottom-color: #e8ecf1;
   border-bottom-color: var(--color-border-base);
+  background: rgba(255,255,255,0.1);
 }
+
 
 @media only screen and (min-width: 815px) {
   .site-header .site-header-wrapper {
@@ -907,8 +793,6 @@ textarea {
 }
 
 .site-identity .site-title {
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-family: var(--font-family-body);
   font-size: calc( 1em * ( 1.2 * 1.2 ) );
   font-size: var(--font-size-lg);
   color: #6e7381;
@@ -930,8 +814,6 @@ textarea {
 }
 
 .site-identity .site-description {
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-family: var(--font-family-heading);
   font-size: calc( 1em / ( 1.2 * 1.2 ) );
   font-size: var(--font-size-xs);
   color: #91a3b0;
@@ -949,6 +831,8 @@ textarea {
   border-top: 1px solid grey;
   border-color: #e8ecf1;
   border-color: var(--color-border-base);
+  background: rgba(255,255,255,0.8);
+  color: rgba(0,0,0,0.8);
 }
 
 @media only screen and (min-width: 815px) {
@@ -966,8 +850,6 @@ textarea {
 .site-info {
   font-size: calc( 1em / 1.2 );
   font-size: var(--font-size-sm);
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-family: var(--font-family-body);
   padding: calc(0.75 * 1.5rem);
   padding: var(--space-sm);
 }
@@ -1247,7 +1129,7 @@ textarea {
   .main-navigation > div > ul > li a {
     font-size: calc( 1em / 1.2 );
     font-size: var(--font-size-sm);
-    font-weight: 600;
+    
     padding: calc(0.5 * 1.5rem);
     padding: var(--space-xs);
   }
@@ -1422,24 +1304,24 @@ textarea {
   display: inline-block;
   font-size: calc( 1em * 1.2 );
   font-size: var(--font-size-md);
-  font-weight: 700;
+  
 }
 
 .post-navigation .nav-links a:focus .post-title,
 .post-navigation .nav-links a:hover .post-title {
-  color: #5f4bb6;
+  
   color: var(--color-accent-base);
   text-decoration: none;
 }
 
 .post-navigation .nav-links a .meta-nav {
-  color: #91a3b0;
+  
   color: var(--color-words-subtle);
   display: block;
   padding: calc(0.25 * 1.5rem) 0;
   padding: var(--space-xxs) 0;
   text-transform: uppercase;
-  font-weight: 400;
+  
   font-size: calc( 1em / ( 1.2 * 1.2 * 1.2 ) );
   font-size: var(--font-size-xxs);
 }
@@ -1517,7 +1399,7 @@ textarea {
 .posts-navigation a {
   border: 0;
   display: block;
-  font-weight: 700;
+  
   padding: calc(0.75 * 1.5rem) 0;
   padding: var(--space-sm) 0;
 }
@@ -1825,8 +1707,6 @@ textarea {
 .comment-body .reply {
   margin: calc(0.75 * 1.5rem) 0;
   margin: var(--space-sm) 0;
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-family: var(--font-family-heading);
   font-size: calc( 1em / ( 1.2 * 1.2 ) );
   font-size: var(--font-size-xs);
   text-transform: uppercase;
@@ -1849,12 +1729,10 @@ textarea {
   color: var(--color-secondary-base);
   margin-bottom: calc(0.5 * 1.5rem);
   margin-bottom: var(--space-xs);
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-family: var(--font-family-heading);
   font-size: calc( 1em / 1.2 );
   font-size: var(--font-size-sm);
   font-style: normal;
-  font-weight: 700;
+  
   text-transform: uppercase;
   width: 100%;
 }
@@ -1912,9 +1790,8 @@ textarea {
   border-radius: 3px;
   overflow: hidden;
   color: #fff !important;
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: inherit !important;
-  font-weight: bold !important;
+  
   line-height: inherit !important;
   padding: calc(0.5 * 1.5rem) calc(0.75 * 1.5rem) !important;
   padding: var(--space-xs) var(--space-sm) !important;
@@ -2212,7 +2089,7 @@ object {
 .hentry .entry-title {
   margin: calc(0.75 * 1.5rem);
   margin: var(--space-sm);
-  font-weight: 800;
+  
 }
 
 .hentry .entry-title a {
@@ -2275,7 +2152,7 @@ object {
   color: #121733;
   color: var(--color-words-heading);
   transition: color 110ms ease-in-out;
-  font-weight: 600;
+  
 }
 
 .hentry .entry-meta a:hover {
@@ -2421,7 +2298,7 @@ object {
   transition: color 110ms ease-in-out;
   color: #121733;
   color: var(--color-secondary-base);
-  font-weight: 600;
+  
   margin: calc(0.5 * 1.5rem) 0;
   margin: var(--space-xs) 0;
   white-space: nowrap;
@@ -2484,7 +2361,7 @@ object {
   color: var(--color-words-subtle);
   font-size: calc( 1em / ( 1.2 * 1.2 ) );
   font-size: var(--font-size-xs);
-  font-weight: 400;
+  
   margin-top: 0;
   text-transform: uppercase;
 }
@@ -2496,7 +2373,7 @@ object {
   display: block;
   font-size: calc( 1em * ( 1.2 * 1.2 * 1.2 * 1.2 ) );
   font-size: var(--font-size-xxl);
-  font-weight: 900;
+  
   margin: 0 0 calc(0.5 * 1.5rem);
   margin: 0 0 var(--space-xs);
   text-transform: none;
@@ -2508,7 +2385,7 @@ object {
 
 .hentry .entry-author .author-bio .author-link {
   white-space: nowrap;
-  font-weight: 700;
+  
 }
 
 .hentry .entry-author .author-bio .author-link:hover {
@@ -2534,7 +2411,7 @@ object {
   color: #121733;
   color: var(--color-words-heading);
   transition: color 110ms ease-in-out;
-  font-weight: 600;
+  
 }
 
 .blog .hentry .entry-meta a:hover,
@@ -2571,11 +2448,7 @@ object {
   font-weight: normal;
 }
 
-.blog .hentry .entry-meta .byline,
-.archive .hentry .entry-meta .byline,
-.search .hentry .entry-meta .byline {
-  font-weight: 600;
-}
+
 
 .blog .hentry .entry-footer .entry-meta,
 .archive .hentry .entry-footer .entry-meta,
