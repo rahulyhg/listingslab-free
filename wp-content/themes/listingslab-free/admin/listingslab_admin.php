@@ -10,6 +10,16 @@ function register_listingslab_settings() {
     register_setting( 'listingslab-group', 'text_color' );
 }
 
+if ( function_exists('register_sidebar') )
+  register_sidebar(array(
+    'name' => 'Listingslab Sidebar',
+    'before_widget' => '<aside class="listingslab-sidebar">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h4 class="listingslab-sidebar-title">',
+    'after_title' => '</h4>',
+  )
+);
+
 function listingslab_admin_menu() {
     // https://developer.wordpress.org/resource/dashicons/#vault
 	add_menu_page( 

@@ -21,11 +21,18 @@
 		<?php endif; ?>
 
 
-		<div class="featured-image">
+		<!-- <div class="featured-image">
 			<a href="<?php echo get_permalink(); ?>" title="<?php echo get_the_title(); ?>">
-				<?php echo get_the_post_thumbnail( $page->ID, 'medium' ); ?>
+				<?php 
+					print_r ('<pre>');
+					var_dump($page);
+					print_r ('</pre>');
+					if ($page !== 0 && $page != NULL){
+						echo get_the_post_thumbnail( $page->ID, 'medium' ); 
+					}
+				?>
 			</a>
-		</div>
+		</div> -->
 	</header><!-- .entry-header -->
 
 	
