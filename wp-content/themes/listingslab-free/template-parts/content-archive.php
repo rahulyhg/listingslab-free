@@ -21,26 +21,27 @@
 		<?php endif; ?>
 
 
-		<!-- <div class="featured-image">
+		<div class="featured-image">
 			<a href="<?php echo get_permalink(); ?>" title="<?php echo get_the_title(); ?>">
 				<?php 
-					print_r ('<pre>');
-					var_dump($page);
-					print_r ('</pre>');
-					if ($page !== 0 && $page != NULL){
+					// print_r ('<pre>');
+					// var_dump($page);
+					// print_r ('</pre>');
+					// if ($page !== 0 && $page != NULL){
 						echo get_the_post_thumbnail( $page->ID, 'medium' ); 
-					}
+					// }
 				?>
 			</a>
-		</div> -->
-	</header><!-- .entry-header -->
+		</div>
+
+	</header>
 
 	
 
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
+	</div>
 
 	<footer class="entry-footer">
 		<div class="entry-meta">

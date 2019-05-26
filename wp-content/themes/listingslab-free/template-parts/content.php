@@ -25,9 +25,9 @@
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
-		<!-- <div class="featured-image">
+		<div class="featured-image">
 			<?php echo get_the_post_thumbnail( $page->ID, 'medium' ); ?>
-		</div> -->
+		</div>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

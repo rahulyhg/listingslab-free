@@ -2,7 +2,7 @@
   Theme Name: Listingslab FREE
   Theme URI: https://listingslab.com/wordpress
 	Description: Progressive Web App for WordPress
-	Version: 0.0.5
+	Version: 0.0.6
 	Author: listingslab (@listingslab)
 	Author URI: https://listingslab.com
 	Tags: PWA, React, Server Side Rendering, Firebase
@@ -643,9 +643,6 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-  border: 1px solid gray;
-  border-color: #e8ecf1;
-  border-color: var(--color-border-base);
   font-size: 1em;
   font-size: var(--font-size-base);
   padding: 3px;
@@ -728,9 +725,7 @@ textarea {
 /** === Site Branding === */
 .site-header {
   position: relative;
-  border-bottom: 1px solid gray;
-  border-bottom-color: #e8ecf1;
-  border-bottom-color: var(--color-border-base);
+  
   background: rgba(255,255,255,0.1);
 }
 
@@ -828,9 +823,6 @@ textarea {
 }
 
 .site-footer {
-  border-top: 1px solid grey;
-  border-color: #e8ecf1;
-  border-color: var(--color-border-base);
   background: rgba(255,255,255,0.8);
   color: rgba(0,0,0,0.8);
 }
@@ -1066,10 +1058,6 @@ textarea {
     margin-top: var(--space-xs);
   }
   .main-navigation.toggled-on > div > ul {
-    border-top: solid 1px grey;
-    border-bottom: solid 1px grey;
-    border-color: #e8ecf1;
-    border-color: var(--color-border-base);
     background-color: #ffffff;
     background-color: var(--color-shade-white);
     padding: calc(0.5 * 1.5rem);
@@ -1134,9 +1122,6 @@ textarea {
     padding: var(--space-xs);
   }
   .main-navigation > div > ul > li > ul {
-    border: 1px solid grey;
-    border-color: #e8ecf1;
-    border-color: var(--color-border-base);
   }
   #page .main-navigation > div > ul > li > ul button.dropdown-toggle {
     padding: calc(0.25 * 1.5rem);
@@ -1206,8 +1191,6 @@ textarea {
     position: relative;
     background-color: #ffffff;
     background-color: var(--color-shade-white);
-    border-color: #e8ecf1;
-    border-color: var(--color-border-base);
     padding-top: calc(0.75 * 1.5rem);
     padding-top: var(--space-sm);
     bottom: 0;
@@ -1390,9 +1373,7 @@ textarea {
 
 .comment-navigation,
 .posts-navigation {
-  border-top: 1px solid grey;
-  border-color: #e8ecf1;
-  border-color: var(--color-border-base);
+
 }
 
 .comment-navigation a,
@@ -2321,9 +2302,6 @@ object {
 }
 
 .hentry .entry-author {
-  border-top: 1px solid grey;
-  border-color: #e8ecf1;
-  border-color: var(--color-border-base);
   margin: calc(0.75 * 1.5rem);
   margin: var(--space-sm);
   padding-top: calc(1.25 * 1.5rem);
