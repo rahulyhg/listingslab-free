@@ -20,9 +20,49 @@
         color: <?php echo $config->text_color; ?>;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     }
+
+    .menu-item-type-post_type{
+        background: black;
+        border-radius: 2px;
+        /* border: 1px solid #eee; */
+        width: 100%;
+        color: #eee;
+        margin: 2px;
+    }
+    .menu-item-type-post_type a{
+        color: #eee;
+    }
+    .menu-item-type-post_type a:hover{
+        background: #222;
+    }
+
+
+    .site-header, .site-footer {
+        margin: auto;
+        max-width: 790px;
+    }
+
+    .menu-toggle {
+        /* border: 1px solid #eee; */
+    }
+
+
+
+    textarea:focus, input:focus {
+         outline: none;
+         outline-style:none;
+         box-shadow:none;
+         border-color:transparent;
+     }
+     :focus {
+         outline: none;
+         outline-style:none;
+         box-shadow:none;
+         border-color:transparent;
+     }
     
     :root {
-        --color-primary-base: none;
+        --color-primary-base: <?php echo $config->theme_color; ?>;;
         --color-primary-dark: none;
         --color-primary-light: none;
         --color-primary-bg: none;
@@ -58,7 +98,7 @@
         --color-border-form-error: none;
         --color-border-form-bg: none;
         --color-border-form-placeholder: none;
-        --color-background-body: none;
+        --color-background-body: <?php echo $config->theme_color; ?>;;
         --color-background-transparent: transparent;
         --color-button-primary-bg: none;
         --color-button-primary-hover: none;

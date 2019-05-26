@@ -19,7 +19,7 @@
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
 			<div class="entry-meta">
-			<?php
+			<!-- <?php
 				edit_post_link(
 					sprintf(
 						wp_kses(
@@ -36,7 +36,7 @@
 					'<span class="edit-link">',
 					'</span>'
 				);
-			?>
+			?> -->
 			</div>
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
