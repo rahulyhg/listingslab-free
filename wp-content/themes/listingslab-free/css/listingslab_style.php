@@ -109,4 +109,11 @@
         --color-button-secondary-active: none;
         --color-button-secondary-label: none;
     }
+
+    ul, li {
+        list-style: none;
+    }
+    .svg-icon{
+        color: white;
+    }
 </style>
