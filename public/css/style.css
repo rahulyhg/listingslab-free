@@ -8,48 +8,20 @@ body {
   -moz-osx-font-smoothing: grayscale; 
   color: rgba(0, 0, 0, 0.9);
 }
+.nav-list ul, .nav-list li {
+    padding: 8px;
+    display: inline;
+}
 .app {
     margin: auto;
     max-width: 600px;
 }
 .app-wrap {
     margin: 8px;
-    /* padding: 8px;  */
-}
-.title {
-    float: left;
-}
-.nav {
-    float: right;
-}
-.header {
-    font-size: 0.75rem;
-    text-align: right;
-    margin-top: 8px;
-    text-transform: uppercase;
-}
-.logo {
-    margin-left: 8px;
-    margin-right: 8px;
-    float: left;
-}
-.mainTitle {
-    margin-left: 8px;
-    float: left;
-}
-.subTitle {
-    margin-left: 16px;
-    float: left;
-}
-.card {
-    margin-top: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.35);
     padding: 8px;
-    /* width: 45%;
-    min-width: 345px; */
-    float: left;
 }
 .simple-dumb-class {
-    border: 1px solid rgba(0, 0, 0, 0.85);
     background: rgba(0, 0, 0, 0.75);
     color: rgba(255, 255, 255, 0.85);
     margin-top: 16px;
@@ -57,32 +29,4 @@ body {
 }
 .clearBoth{
     clear: both;
-}
-ul {
-    margin: 0;
-    list-style: none;
-}
-li {
-    margin: 0;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
-    padding: 0;
-    margin: 0;
-    color: rgba(0, 0, 0, 0.8);
-}
-h1 {
-    padding-bottom: 8px;
-}
-h2 {
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
-a {
-    text-decoration: none;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.8);
-}
-a:hover {
-    color: #3aa6f1;
 }

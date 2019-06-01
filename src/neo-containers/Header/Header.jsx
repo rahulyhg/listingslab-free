@@ -5,18 +5,19 @@ const Header = (props) => {
         <React.Fragment>
             <header className={`header`}>
                 <div className={`title`} >
-                    <a href="/">
-                        <img 
-                            className={`logo`} 
-                            src={`/png/logo.png`} 
-                            alt={`Neo Containers`}  
-                        />
-                        <h1 className={`mainTitle`}>listingslab FREE</h1>
-                    </a>
+                    
+                    <img 
+                        className={`logo`} 
+                        src={`/png/logo.png`} 
+                        alt={`Neo Containers`}  
+                    />
+                    <h1 className={`mainTitle`}>Free WordPress PWA</h1>
+                    
                 </div>
                 <div  className={`clearBoth`} />
-                <hr />
+                
             </header>
+            <div className={`clearBoth`} />
         </React.Fragment>
     );
 };

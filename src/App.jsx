@@ -59,12 +59,12 @@ function App() {
           <main>
             <Router>
               <div>
-                <ul>
+                <ul className="nav-list">
                   <li><Link to="/">Home</Link></li>
                   <li><Link to="/about">About</Link></li>
                   <li><Link to="/topics">Topics</Link></li>
                 </ul>
-                <hr />
+                
                 <Route exact path="/" component={Home} />
                 <Route path="/about" component={About} />
                 <Route path="/topics" component={Topics} />
@@ -81,26 +81,12 @@ function App() {
 export default App;
 
 
-
-
-
-
-
-
-
 /*
-
-// import Button from '@rexlabs/styling/';
-// import DumbComponent from './components/DumbComponent/DumbComponent';
-// import Button from './components/Vivid/button/src';
-
 <Button />
-
 <DumbComponent 
   someClassNames={`simple-dumb-class`}
   someText={`e2e Testing with cucumber`}
 />
-
 <nav className={`nav`}>
   <ul>
     <li><a href={`/dumb-component`}>Dumb Components</a></li>

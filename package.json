@@ -9,7 +9,7 @@
     "email": "listingslab@gmail.com"
   },
   "scripts": {
-    "deploy": "clear && react-scripts build && firebase deploy",
+    "deploy": "clear && cd ./firebase && firebase deploy",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
