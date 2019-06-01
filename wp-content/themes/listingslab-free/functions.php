@@ -1,19 +1,12 @@
 <?php
-/**
- * Gutenbergtheme functions and definitions
- *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
- *
- * @package Business
- */
-
+/*------------------------------------*\
+	listingslab Functions
+\*------------------------------------*/
+include 'admin/listingslab_admin.php';
 
 /*------------------------------------*\
-	LIO Functions
+	listingslab Functions
 \*------------------------------------*/
-
-include 'admin/lio_admin.php';
-
 
 if ( ! function_exists( 'business_theme_setup' ) ) :
 	/**
@@ -251,12 +244,4 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( is_admin() )
 	include dirname( __FILE__ ) . '/inc/updater.php';
 
-if ( function_exists('register_sidebar') )
-  register_sidebar(array(
-    'name' => 'Child Page List',
-    'before_widget' => '<div class="child-page-list">',
-    'after_widget' => '</div>',
-    'before_title' => '<h4>',
-    'after_title' => '</h4>',
-  )
-);
+
