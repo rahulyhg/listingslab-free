@@ -1,7 +1,7 @@
 {
   "name": "listingslab-free",
-  "description": "listingslab's FREE WordPress Theme",
-  "version": "0.0.3",
+  "description": "FREE WordPress PWA Project",
+  "version": "0.0.4",
   "repository": "https://github.com/listingslab-software/listingslab-free.git",
   "license": "MIT",
   "author": {
@@ -63,8 +63,9 @@
     ]
   },
   "keywords": [
-    "React",
-    "Render Props",
-    "HOC"
+    "react",
+    "free",
+    "wordpress",
+    "pwa"
   ]
 }
