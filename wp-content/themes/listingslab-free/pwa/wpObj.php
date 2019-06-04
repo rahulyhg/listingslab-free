@@ -1,11 +1,9 @@
 <?php 
-
   $wpObj = new stdClass();
-
-  $wpObj->colour_theme = 'DARKGREEN';
-  $wpObj->colour_background = 'WHITE';
-  $wpObj->colour_text = 'rgba(0,0,0,0.75)';
-  $wpObj->colour_headings = 'LIMEGREEN';
+  $wpObj->colour_text = get_option('text_color');
+  $wpObj->colour_theme = get_option('theme_color');
+  $wpObj->colour_background = get_option('background_color');
+  $wpObj->colour_headings = get_option('headings_color');
   $wpObj->keywords = 'one, two three, four';
   $wpObj->geo_region = null;
   $wpObj->geo_placename = null;
@@ -32,7 +30,12 @@
   $wpObj->bloginfo->rss2_url = get_bloginfo('rss2_url');
   $wpObj->bloginfo->comments_atom_url = get_bloginfo('comments_atom_url');
   $wpObj->bloginfo->comments_rss2_url = get_bloginfo('comments_rss2_url');
-  $wpObj->featuredImage = $wpObj->bloginfo->stylesheet_directory . "/png/404.png";
-  $wpObj->nav = get_terms('nav_menu');
+  $wpObj->icon = $wpObj->bloginfo->stylesheet_directory . '/png/icon.png';
+  $post_thumbnail = get_the_post_thumbnail_url();
+  if ($post_thumbnail == NULL){
+    $wpObj->featuredImage = $wpObj->bloginfo->stylesheet_directory . "/jpg/default.jpg";
+  } else {
+    $wpObj->featuredImage = $post_thumbnail;
+  }
+  $wpObj->nav = wp_get_nav_menus();
   $wpObj->queriedObj = get_queried_object();
-?>

@@ -1,8 +1,5 @@
-<pre>
+<!-- <pre>
     <?php 
-        var_dump($wpObj);
-        // foreach($wpObj->nav as $menu){
-        //     echo $menu->name . " n";
-        // }
+        var_dump($wpObj->featuredImage);
     ?>
-</pre>
+</pre> -->

@@ -1,5 +1,5 @@
 <?php include 'pwa/wpObj.php'; ?>
-<?php // include 'pwa/inc_console.php'; ?>
+<?php include 'pwa/inc_console.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,21 +9,30 @@
   </head>
   <body>
     <div class="listingslab" />
-      <noscript><?php echo $wpObj->bloginfo->name; ?></noscript>
+
+      <noscript>
+          <?php echo $wpObj->bloginfo->name; ?>
+      </noscript>
+
       <div id="listingslab-react" />
+
       <header>
         <?php include 'pwa/inc_header.php'; ?>
       </header>
-      <aside>
-        <?php include 'pwa/inc_aside.php'; ?>
-      </aside>
-      <main>
-        <?php include 'pwa/inc_main.php'; ?>
-      </main>
-      
+
+      <div class="content">
+        <div class="nav">
+          <?php include 'pwa/inc_nav.php'; ?>
+        </div>
+        <div class="main">
+          <?php include 'pwa/inc_main.php'; ?>
+        </div>
+      </div>
+
       <footer>
         <?php include 'pwa/inc_footer.php'; ?>
       </footer>
+
     </div>
   </body>
 </html>
