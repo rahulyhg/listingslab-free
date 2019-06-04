@@ -11,7 +11,7 @@ const Header = (props) => {
                         src={`/png/logo.png`} 
                         alt={`Neo Containers`}  
                     />
-                    <h1 className={`mainTitle`}>Free WordPress PWA</h1>
+                    <h1 className={`mainTitle`}>...</h1>
                     
                 </div>
                 <div  className={`clearBoth`} />

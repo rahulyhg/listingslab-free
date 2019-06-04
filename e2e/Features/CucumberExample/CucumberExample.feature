@@ -9,4 +9,4 @@ Feature: CucumberExample
   Scenario: Check App fires up
     Given I am on the app page
     And I wait "2" seconds
-    Then I should see "LISTINGSLAB FREE"
+    Then I should see "Free WordPress PWA"

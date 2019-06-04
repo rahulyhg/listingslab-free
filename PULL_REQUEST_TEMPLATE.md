@@ -1,9 +1,9 @@
 
 # Pull Request
 
-Describe proposed changes in a good PR description.
+Describe proposed changes in a full PR description.
 Extra bonus points for using Agile language.
-Job for life if you use Gherkin syntax abd proper BDD
+A job for life if you use Gherkin syntax and a real Cucumber Test
 
-title: 'This PR adds blah blah blah',
-comment: 'commit summary in conventional commit format'
+Title: 'This PR adds blah blah blah',
+Comment: 'commit history summary in conventional commit format'
