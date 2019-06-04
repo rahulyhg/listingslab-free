@@ -1,5 +1,16 @@
 <?php 
+
   $wpObj = new stdClass();
+
+  $wpObj->colour_theme = 'DARKGREEN';
+  $wpObj->colour_background = 'WHITE';
+  $wpObj->colour_text = 'rgba(0,0,0,0.75)';
+  $wpObj->colour_headings = 'LIMEGREEN';
+  $wpObj->keywords = 'one, two three, four';
+  $wpObj->geo_region = null;
+  $wpObj->geo_placename = null;
+  $wpObj->geo_position = null;
+  $wpObj->geo_ICBM = null;
   $wpObj->bloginfo = new stdClass();
   $wpObj->bloginfo->name = get_bloginfo('name');
   $wpObj->bloginfo->description = get_bloginfo('description');

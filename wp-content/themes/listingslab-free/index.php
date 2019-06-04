@@ -1,26 +1,11 @@
-<?php
-  $wpObj = new stdClass();
-  include 'pwa/inc_create_obj.php';
-  $wpObj->nav = get_terms('nav_menu');
-?>
-<pre><?php 
-          // var_dump($wpObj->queriedObj->post_title)
-          // foreach($wpObj->nav as $menu){
-          //   echo $menu->name . " n";
-          // }
-?></pre>
+<?php include 'pwa/wpObj.php'; ?>
+<?php // include 'pwa/inc_console.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="red" />
-    <link rel="manifest" href="manifest.json" />
-    <link rel="apple-touch-icon" href="/png/icon.png">
-    <link rel="stylesheet" href="<?php echo $wpObj->bloginfo->stylesheet_directory; ?>/css/normalize.css">
-    <link rel="stylesheet" href="<?php echo $wpObj->bloginfo->stylesheet_directory; ?>/style.css">
+    <?php include 'pwa/inc_meta.php'; ?>
     <title><?php echo $wpObj->bloginfo->name; ?></title>
+    <?php include 'pwa/inc_style.php'; ?>
   </head>
   <body>
     <div class="listingslab" />
