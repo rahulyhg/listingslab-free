@@ -30,7 +30,8 @@
   $wpObj->bloginfo->rss2_url = get_bloginfo('rss2_url');
   $wpObj->bloginfo->comments_atom_url = get_bloginfo('comments_atom_url');
   $wpObj->bloginfo->comments_rss2_url = get_bloginfo('comments_rss2_url');
-  $wpObj->icon = $wpObj->bloginfo->stylesheet_directory . '/png/icon.png';
+  // $wpObj->icon = $wpObj->bloginfo->stylesheet_directory . '/png/icon.png';
+  $wpObj->icon = get_site_icon_url();
   $post_thumbnail = get_the_post_thumbnail_url();
   if ($post_thumbnail == NULL){
     $wpObj->featuredImage = $wpObj->bloginfo->stylesheet_directory . "/jpg/default.jpg";

@@ -23,6 +23,9 @@
         color: <?php echo $wpObj->colour_headings; ?>;
         text-decoration: none;
     }
+    .listingslab a:hover {
+        color: <?php echo $wpObj->colour_theme; ?>;
+    }
     .listingslab ul, .listingslab li {
         margin: 0;
         padding: 0;
@@ -35,9 +38,11 @@
     .listingslab h4, .listingslab h5, .listingslab h6{
         color: <?php echo $wpObj->colour_headings; ?>;
         margin: 0;
+        margin-bottom: 8px;
         padding: 0;
+        padding-top: 8px;
         font-weight: normal;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .listingslab .content {
         display: flex;
@@ -45,6 +50,7 @@
     .listingslab .nav {
         flex: 1;
         padding: 8px;
+        font-size: 0.8rem;
     }
     .listingslab .main {
         /* border: 1px solid <?php echo $wpObj->colour_theme; ?>; */
@@ -53,13 +59,11 @@
     .listingslab .header {
         display: flex;
         padding: 8px;
-        border-bottom: 1px solid <?php echo $wpObj->colour_theme; ?>;
-        margin-bottom: 8px;
     }
 
     .listingslab .header .logo {
-        width: 32px;
-        height: 32px;
+        width: 35px;
+        height: 35px;
     }
 
     .listingslab .headings {
@@ -70,24 +74,20 @@
     .listingslab .header h1 {
         padding: 0;
         margin: 0;
-        font-weight: normal;
-        font-size: 0.8rem;
     }
     .listingslab .header h2 {
         padding: 0;
         margin: 0;
-        font-weight: normal;
-        font-size: 0.7rem;
     }
     .listingslab .footer {
         /* border: 1px solid <?php echo $wpObj->colour_theme; ?>; */
         margin-top: 32px;
         padding: 8px;
-        text-align: center;
+        text-align: right;
     }
     .listingslab .footer .footer-icon {
-        width: 16px;
-        height: 16px;
+        width: 25px;
+        height: 25px;
     }
 
     @media (max-width: 400px) {
@@ -101,6 +101,9 @@
         .listingslab .nav {
             /* visibility: hidden; */
             display: none;
+        }
+        .listingslab .footer {
+            text-align: center;
         }
     }
 </style>
