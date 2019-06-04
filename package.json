@@ -1,7 +1,7 @@
 {
   "name": "listingslab-free",
-  "description": "listingslab's FREE WordPress Theme",
-  "version": "0.0.3",
+  "description": "FREE WordPress PWA",
+  "version": "0.0.6",
   "repository": "https://github.com/listingslab-software/listingslab-free.git",
   "license": "MIT",
   "author": {
@@ -9,7 +9,7 @@
     "email": "listingslab@gmail.com"
   },
   "scripts": {
-    "deploy": "clear && react-scripts build && firebase deploy",
+    "deploy": "clear && cd ./firebase && firebase deploy",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -20,23 +20,15 @@
     "e2e:start": "run-s start e2e:_webdriver"
   },
   "dependencies": {
-    "lodash": "^4.17.11",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.0"
   },
   "devDependencies": {
-    "@types/nightwatch": "^0.9.8",
-    "@types/react": "^16.7.6",
-    "@types/react-dom": "^16.0.9",
     "chromedriver": "2.43.1",
     "cucumber": "5.0.2",
     "cucumber-pretty": "^1.5.0",
-    "gulp": "^4.0.0",
-    "gulp-clean": "^0.4.0",
-    "gulp-color": "^0.0.2",
-    "gulp-rename": "^1.4.0",
     "nightwatch": "1.0.11",
     "nightwatch-api": "latest",
     "selenium-server": "^3.141.0",
@@ -63,8 +55,9 @@
     ]
   },
   "keywords": [
-    "React",
-    "Render Props",
-    "HOC"
+    "react",
+    "free",
+    "wordpress",
+    "pwa"
   ]
 }
