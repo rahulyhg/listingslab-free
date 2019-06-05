@@ -94,6 +94,7 @@ function listingslab_settings(){
                     type="text" 
                     name="theme_color" 
                     value="<?php echo esc_attr( get_option('theme_color') ); ?>" />
+                    // #abd4d8
             </td>
         </tr>
         <tr valign="top">
@@ -107,6 +108,7 @@ function listingslab_settings(){
                     type="text" 
                     name="background_color" 
                     value="<?php echo esc_attr( get_option('background_color') ); ?>" />
+                    // #ffffff
             </td>
         </tr>
 
@@ -121,6 +123,7 @@ function listingslab_settings(){
                     type="text" 
                     name="headings_color" 
                     value="<?php echo esc_attr( get_option('headings_color') ); ?>" />
+                    // #668894
             </td>
         </tr>
 
@@ -135,7 +138,9 @@ function listingslab_settings(){
                     type="text" 
                     name="text_color" 
                     value="<?php echo esc_attr( get_option('text_color') ); ?>" />
+                    // #203c51
                 </td>
+                
         </tr>
     </table>
     </div>
