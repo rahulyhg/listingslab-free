@@ -4,7 +4,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="HandheldFriendly" content="true"/>
     <link rel="manifest" href="<?php echo $wpObj->bloginfo->stylesheet_directory; ?>/pwa/manifest.php" />
-    <link rel="apple-touch-icon" href="<?php echo $wpObj->bloginfo->stylesheet_directory; ?>/png/icon.png">
+    <link rel="apple-touch-icon" href="<?php echo $wpObj->icon; ?>">
     <meta name="theme-color" content="<?php echo $wpObj->colour_theme; ?>" />
     <meta itemprop="name" content="<?php echo $wpObj->bloginfo->name; ?>">
     <meta name="keywords" content="<?php echo $wpObj->keywords; ?>">
